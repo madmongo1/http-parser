@@ -3,7 +3,7 @@ project (http_parser C)
 set(HDRS http_parser.h)
 set(SRCS http_parser.c)
 add_library (http_parser ${SRCS} ${HDRS})
-set (binstall_h_path "${CMAKE_CURRENT_BINARY_DIR}/contrib/http_parser")
+set (binstall_h_path "${CMAKE_CURRENT_BINARY_DIR}/include/contrib/http_parser")
 add_custom_command (TARGET http_parser
 POST_BUILD
 COMMAND ${CMAKE_COMMAND} -E make_directory
